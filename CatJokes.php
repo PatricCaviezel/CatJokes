@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<!Author 1: Jon Landa <jonlanda06@gmail.com>
-  <!Author 2: Patric Caviezel <patric.caviezel@gmail.com>
-    <!Author 3: Luc Hauser <luc.hauser@bluewin.ch>
-
       <head>
+<!Author 1: Jon Landa <jonlanda06@gmail.com>
+<!Author 2: Patric Caviezel <patric.caviezel@gmail.com>
+<!Author 3: Luc Hauser <luc.hauser@bluewin.ch>
+
+<link rel="stylesheet" href="Styles.css">
+
+<meta name="viewport" content="width=device-width,height=device-heigt, initial-scale=1.0">
         <title>CatJokes</title>
-        <style>
-          .container {
-            height: 500px;
-            position: relative;
-            border: 0px solid green;
-          }
 
-          .container2 {
-            height: 500px;
-            position: relative;
-            border: 0px solid green;
-          }
-
-          .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 70%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-          }
-
-          .vertical-center-canvas {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-          }
-
-          .button-size {
-            width: 50px;
-            height: 50px;
-          }
-        </style>
         <?php
         function get_img_data()
         {
@@ -72,16 +41,24 @@
                     array_push($img_data, $elem);
                 }
             }
-            $max_size = 500;
-            if ($image[1] > $image) {
-                return $img_data;
+            $max_size = 600;
+            if ($max_size < $img_data[1]) {
+                $img_data[1] = ($img_data[1] / $img_data[1]) * $max_size;
+                $img_data[2] = ($img_data[2] / $img_data[2]) * $max_size;
             }
+            if ($max_size < $img_data[2]) {
+                $img_data[1] = ($img_data[1] / $img_data[1]) * $max_size;
+                $img_data[2] = ($img_data[2] / $img_data[2]) * $max_size;
+            }
+            return $img_data;
         }
         $image = get_img_data();
-
+        $img_url = $image[0];
+        $width = $image[1];
+        $height = $image[2];
         function joke()
         {
-            $url = "https://v2.jokeapi.dev/joke/Any?type=twopart?format=json";
+            $url = "https://v2.jokeapi.dev/joke/Any?type=twopart";
 
             $headers = array(
             'Accept: application/json',
@@ -102,27 +79,41 @@
 
             if ($code == 200) {
                 $response = json_decode($response, true);
-                $joke = $response['setup'] . PHP_EOL . "  " . $response['delivery'] . PHP_EOL;
+                $joke = $response['setup'] . "\n" . "  " . $response['delivery'] . "\n";
                 return $joke;
             } else {
                 echo 'error ' . $code;
             }
         }
         ?>
+
       </head>
-      <body style="background-color:rgb(229, 170, 112);">
-        <div class="container">
-          <div class="vertical-center">
-            <buttond class="button-size" onclick="location.reload ();"
-              style="background-color:rgb(0, 0, 0); color:rgb(255, 255, 255); border: 2px solid rgb(0, 0, 0);">
-              Refresh
-            </buttond>
-          </div>
-        </div>
-        <img src="<?php echo $image[0]; ?>">
+      <body class="rainbow">
+      <center>
+      <p style="font-size:70px;">CatJokes</p>
+      </center>
+      <div id="background-log">
+  <div class="button-login">
+    <center>
+    <button onClick="window.location.reload();" class="refresh" style="font-size: 40px">refresh</button>
+      </center>
+  </div>
+</div>
+      <center>
+        <img src="<?php echo $img_url; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+      </center>
+        <center>
+          <p class="size">
         <?php
         print joke();
         ?>
+        </p>
+        </center>
       </body>
+      <footer>
+        <center>
+        <h4 style="color:red">Sometimes there is an error. Just refresh to fix it</h4>
+        </center>
+      </footer>
 
 </html>
