@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!Author 1: Jon Landa <bosteler06@gmail.com>
+<!Author 1: Jon Landa <jonlanda06@gmail.com>
   <!Author 2: Patric Caviezel <patric.caviezel@gmail.com>
     <!Author 3: Luc Hauser <luc.hauser@bluewin.ch>
 
@@ -72,10 +72,12 @@
                     array_push($img_data, $elem);
                 }
             }
-            return $img_data;
+            $max_size = 500;
+            if ($image[1] > $image) {
+                return $img_data;
+            }
         }
         $image = get_img_data();
-        $img_url = $image[0];
 
         function joke()
         {
@@ -101,14 +103,13 @@
             if ($code == 200) {
                 $response = json_decode($response, true);
                 $joke = $response['setup'] . PHP_EOL . "  " . $response['delivery'] . PHP_EOL;
+                return $joke;
             } else {
                 echo 'error ' . $code;
             }
         }
         ?>
-
       </head>
-
       <body style="background-color:rgb(229, 170, 112);">
         <div class="container">
           <div class="vertical-center">
@@ -118,13 +119,10 @@
             </buttond>
           </div>
         </div>
-        <img src="<?php echo $img_url; ?>">
-
-
-
+        <img src="<?php echo $image[0]; ?>">
         <?php
-        print $joke;
+        print joke();
         ?>
-          </body>
+      </body>
 
 </html>
