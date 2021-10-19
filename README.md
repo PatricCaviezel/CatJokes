@@ -1,4 +1,4 @@
-Dieses Projekt Dient nur zum Spass. 
+Dieses Projekt Dient nur zum Spass.
 Es soll Katzenliebhaber oder auch andere Menschen eine Freude bereiten.
 Sollte dieses projekt veröffentlicht werden, kann man die Dateien herunterladen
 und ausführen. Man muss darauf achten, dass die Bilder sich im selben Ordner wie
@@ -10,6 +10,3 @@ drücken und die Katzen sowie die Witze geniessen.
 Jon
 Luc
 Patric
-
-![favicon](D:\ZLI\Docker\phpDEV\code\CatJokes\favicon.png)
-
