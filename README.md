@@ -10,3 +10,5 @@ drücken und die Katzen sowie die Witze geniessen.
 Jon
 Luc
 Patric
+
+![image-20211020082855527](C:\Users\patri\AppData\Roaming\Typora\typora-user-images\image-20211020082855527.png)
