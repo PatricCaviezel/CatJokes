@@ -1,4 +1,4 @@
-This Project was only for fun.
+This Project is only for fun.
 It's purpose is to bring joy to cat-lovers and other people too.
 If this project gets published you can download the file  and execute it.
 If you want to be able to execute the project you will need the PHP server extension for Visual Studio Code.
