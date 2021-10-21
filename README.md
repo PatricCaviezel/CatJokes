@@ -1,19 +1,19 @@
-Dieses Projekt Dient nur zum Spass.
-Es soll Katzenliebhaber oder auch andere Menschen eine Freude bereiten.
-Sollte dieses projekt veröffentlicht werden, kann man die Dateien herunterladen
-und ausführen. Man muss darauf achten, dass die Bilder sich im selben Ordner wie
-die HTML Datei befindet.
-Um das Projekt auszuführen muss man lediglich auf die HTML Datei doppelklicken
-und schon sollte alles funktionieren. Danach muss man nur noch den refresh button
-drücken und die Katzen sowie die Witze geniessen.
+This Project was only for fun.
+It's purpose is to bring joy to cat-lovers and other people too.
+If this project gets published you can download the file  and execute it.
+If you want to be able to execute the project you will need the PHP server extension for Visual Studio Code.
+You also need to have PHP installed on your computer or a PHP Docker.
+Once you should be set to go!
+To see other facts, jokes and cats you can simply press the reload button.
 
 Jon
 Luc
-Patric
+
 
 Team Logo:
+
+![Optional Text](https://64.media.tumblr.com/87ecce165898ff7a954c075b166e4dea/458d5e5127d14578-7c/s250x400/c5c3f8100bde31bfb98f926948ef47f3ee1fd270.png)
 
 ```
 https://64.media.tumblr.com/87ecce165898ff7a954c075b166e4dea/458d5e5127d14578-7c/s250x400/c5c3f8100bde31bfb98f926948ef47f3ee1fd270.png
 ```
-
