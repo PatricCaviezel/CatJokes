@@ -40,6 +40,7 @@
 }
 .refresh {
   background-color: rgb(252, 0, 126);
+  font-size: 40px;
 }
 .container {
 height: 500px;
@@ -73,3 +74,14 @@ transform: translate(-50%, -50%);
 .size {
   font-size: xx-large;
 }
+
+.fontcool {
+  font-size: 70px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.git-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  }
