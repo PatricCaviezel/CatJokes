@@ -14,9 +14,9 @@ Once you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
 # APIs:
-Cat API: https://thecatapi.com/
-Jokes API: https://sv443.net/jokeapi/v2/
-Random Facts API: https://uselessfacts.jsph.pl
+- Cat API: https://thecatapi.com/
+- Jokes API: https://sv443.net/jokeapi/v2/
+- Random Facts API: https://uselessfacts.jsph.pl
 
 # Code of Conduct
 - Honesty
