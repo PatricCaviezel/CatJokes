@@ -4,6 +4,7 @@
 - Luc
 - Patric
 
+# IDEA
 This Project is only for fun.
 It's purpose is to bring joy to cat-lovers and other people too.
 If this project gets published you can download the file  and execute it.
@@ -13,9 +14,9 @@ Once you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
 # APIs:
-Cat API: https://thecatapi.com/
-Jokes API: https://sv443.net/jokeapi/v2/
-Random Facts API: https://uselessfacts.jsph.pl
+- Cat API: https://thecatapi.com/
+- Jokes API: https://sv443.net/jokeapi/v2/
+- Random Facts API: https://uselessfacts.jsph.pl
 
 # Code of Conduct
 - Honesty
