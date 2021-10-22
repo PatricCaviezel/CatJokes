@@ -1,8 +1,8 @@
 .rainbow {
   background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
   background-size: 1200% 1200%;
-  -webkit-animation: rainbow 30s ease infinite;
-  animation: rainbow 30s ease infinite;
+  -webkit-animation: rainbow 10s ease infinite;
+  animation: rainbow 10s ease infinite;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
@@ -22,12 +22,12 @@
   background-color: #ffffff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.button-login {
+.button-refresh {
   justify-content: center;
   align-items: center;
   margin: 10px;
 }
-.button-login button {
+.button-refresh button {
   display: block;
   text-transform: uppercase;
   width: 300px;
@@ -80,8 +80,169 @@ transform: translate(-50%, -50%);
   font-family: Copperplate, Papyrus, fantasy;
 }
 
-.git-link {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  }
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+.title {
+  width: 800px;
+  border-style:none;
+  background-color: rgb(247, 183, 8);
+  background: rgb(255, 166, 0);
+  background: -webkit-linear-gradient(left, orange, violet);
+  background: -o-linear-gradient(right, orange, violet);
+  background: -moz-linear-gradient(right, orange, violet);
+  background: linear-gradient(to right, orange , violet);
+ }
+
+.flier2 {
+	pointer-events: none;
+}
+
+.flier2 > * {
+        animation: fly2 27s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes fly2 {
+
+	98.001%, 20% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 0% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	50% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+.flier3 {
+	pointer-events: none;
+}
+
+.flier3 > * {
+        animation: fly2 20s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes fly3 {
+
+	98.001%, 30% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	5% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 0% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	80% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 63% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	35% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	45% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
