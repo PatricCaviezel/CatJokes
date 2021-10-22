@@ -7,6 +7,7 @@ You also need to have PHP installed on your computer or a PHP Docker.
 Once you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
+# Contributors
 Jon
 Luc
 Patric
