@@ -4,6 +4,7 @@
 - Luc
 - Patric
 
+# IDEA
 This Project is only for fun.
 It's purpose is to bring joy to cat-lovers and other people too.
 If this project gets published you can download the file  and execute it.
