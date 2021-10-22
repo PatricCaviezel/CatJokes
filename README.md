@@ -12,12 +12,18 @@ You also need to have PHP installed on your computer or a PHP Docker.
 Once you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
-
-
-APIs:
+# APIs:
 Cat API: https://thecatapi.com/
 Jokes API: https://sv443.net/jokeapi/v2/
 Random Facts API: https://uselessfacts.jsph.pl
+
+# Code of Conduct
+- Honesty
+- Joy
+- - Fun
+- Teamwork
+- - helpful
+- motivation
 
 # Team Logo:
 
