@@ -1,4 +1,9 @@
 # CatJokes
+# Contributors
+Jon
+Luc
+Patric
+
 This Project is only for fun.
 It's purpose is to bring joy to cat-lovers and other people too.
 If this project gets published you can download the file  and execute it.
@@ -7,10 +12,7 @@ You also need to have PHP installed on your computer or a PHP Docker.
 Once you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
-# Contributors
-Jon
-Luc
-Patric
+
 
 APIs:
 Cat API: https://thecatapi.com/
