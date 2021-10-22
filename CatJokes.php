@@ -95,32 +95,35 @@
             }
         }
 
-        $url = "https://uselessfacts.jsph.pl/random.json?language=en";
+        function fact()
+        {
+            $url = "https://uselessfacts.jsph.pl/random.json?language=en";
 
-        $headers = array(
-        'Accept: application/json',
-        'Content-Type: application/json',
-        );
+            $headers = array(
+            'Accept: application/json',
+            'Content-Type: application/json',
+            );
 
 
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, $url);
+            curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 
-        $response = curl_exec($curl);
-        $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        curl_close($curl);
+            $response = curl_exec($curl);
+            $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            curl_close($curl);
 
-        if ($code == 200) {
-            $response = json_decode($response, true);
-        } else {
-            echo 'error ' . $code;
+            if ($code == 200) {
+                $response = json_decode($response, true);
+            } else {
+                echo 'error ' . $code;
+            }
+
+            return $response['text'] . PHP_EOL . "Source: " . $response['source'];
         }
-
-        $print = $response['text'] . PHP_EOL . "Source: " . $response['source'];
         ?>
 
   </head>
@@ -150,7 +153,7 @@
         </h2>
         <p class="size">
           <?php
-            print $print;
+            print fact();
             ?>
         </p>
       </center>
