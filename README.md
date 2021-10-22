@@ -20,9 +20,9 @@ Random Facts API: https://uselessfacts.jsph.pl
 # Code of Conduct
 - Honesty
 - Joy
-- - Fun
+ - Fun
 - Teamwork
-- - helpful
+ - helpful
 - motivation
 
 # Team Logo:
