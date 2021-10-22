@@ -136,7 +136,7 @@
       </p>
     </center>
     <div id="background-log">
-      <div class="button-login">
+      <div class="button-refresh">
         <center>
           <button onClick="window.location.reload();" class="refresh">
             refresh
@@ -148,7 +148,7 @@
         <img src="<?php echo $img_url; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
       </center>
       <center>
-        <h1>
+        <h1 class="title">
           After this purrfect image, here's a random fact.
         </h2>
         <p class="size">
@@ -158,7 +158,7 @@
         </p>
       </center>
       <center>
-        <h1>
+        <h1 class="title">
           in case you didn't like the fact, here's a joke ;).
         </h2>
       </center>
@@ -168,9 +168,20 @@
         print joke();
         ?>
         </p>
-        </center>
+      </center>
+      <div class="flier"><img
+      src="https://64.media.tumblr.com/ad2bce98a46da8b7664e0f2f5c7cb174/c5eedb73a8733d63-64/s250x400/e714bdb18c8c56a0e13641d34be2a5acdbc4344b.png"
+      width="200"/></div>
+      <div class="flier2"><img
+      src="https://64.media.tumblr.com/eaa8d71e3264f1fc8e2d361e1676670b/b438b61a5281cde8-e8/s250x400/0b967cfaecdbfd7e07c3d1dbc5330628db88ca76.png"
+      width="200"/></div>
+      <div class="flier3"><img
+      src="https://64.media.tumblr.com/74cf920c76194d84e49f2f6ef6f87a1d/fa386858bb2ac91b-aa/s250x400/4aebbf3525ce560996385c52ad778dc26e9b0edf.png"
+      width="200"/></div>
   </body>
   <footer>
-  <a href="https://github.com/PatricCaviezel/CatJokes"><img src="https://icdn.enterinit.com/wp-content/uploads/2017/05/26081202/github-logo.png" alt="Git Hub Link"  style="width:96px;height:48px;"></a>
+  <a href="https://github.com/PatricCaviezel/CatJokes"><img
+  src="https://icdn.enterinit.com/wp-content/uploads/2017/05/26081202/github-logo.png"
+  alt="Git Hub Link"  style="width:96px;height:48px;"></a>
   </footer>
 </html>
