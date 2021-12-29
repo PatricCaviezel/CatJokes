@@ -7,10 +7,10 @@
 # IDEA
 This Project is only for fun.
 It's purpose is to bring joy to cat-lovers and other people too.
-If this project gets published you can download the file  and execute it.
-If you want to be able to execute the project you will need the PHP server extension for Visual Studio Code.
+If you want to see the project you can visit the page linked below or you can simply download the file and execute it.
+If you want to be able to execute the project you have to have the PHP server extension for Visual Studio Code.
 You also need to have PHP installed on your computer or a PHP Docker.
-Once you should be set to go!
+Once you have this you should be set to go!
 To see other facts, jokes and cats you can simply press the reload button.
 
 # APIs:
